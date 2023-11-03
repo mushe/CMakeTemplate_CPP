@@ -1,2 +1,2 @@
 # CmakeTemplate_CPP
-C++ CMake template (Win & macOS cross platform)
+C++ CMake template (Windows & macOS cross platform)
