@@ -1,7 +1,6 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.6)
 project(MyApp CXX)
-add_executable(MyApp 
-src/main.cpp
-src/MyClass.h
-src/MyClass.cpp
-)
+FILE(GLOB MySources src/*.cpp src/*.h)
+add_executable(MyApp ${MySources})
+
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT MyApp)
