@@ -1,8 +1,7 @@
 #include <iostream>
-#include "MyClass.h"
+#include "Utility/Debug.h"
 
 int main()
 {
-    MyClass myClass;
-    myClass.Test();
+    Debug::Log("ok");
 }
