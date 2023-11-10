@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.6)
+set(CMAKE_CXX_STANDARD 11)
 
 get_filename_component(Application ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 string(REPLACE " " "_" Application ${Application})
